@@ -30,7 +30,7 @@ console.log(myCurrentJob);
 
 /*
 ------ Data Type-----------
-*/
+
 
 console.log(true);
 
@@ -42,3 +42,56 @@ console.log(typeof jsIsFun);
 console.log(typeof 23);
 console.log(typeof 23.5454);
 console.log(typeof "Maulik");
+
+jsIsFun = "yes";
+console.log(typeof jsIsFun);
+
+let year;
+console.log(year);
+console.log(typeof year);
+year = 1996;
+console.log(year);
+console.log(typeof year);
+
+*/
+
+/*
+-----------let, const and var -----------
+
+let age = 27;
+age = 26;
+
+const birthYear = 1996;
+// birthYear = 1998;
+// const myAge;
+
+var job = "programmer";
+job = "rider";
+
+lastName = "Patel";
+console.log(typeof lastName);
+
+*/
+
+/*
+------------Basic Operators----------
+*/
+
+const currentYear = 2022;
+
+const ageMaulik = currentYear - 1996;
+console.log(ageMaulik);
+
+const ageSweta = currentYear - 1995;
+console.log(ageSweta);
+
+console.log(ageMaulik, ageSweta);
+
+const firstName = "Maulik";
+const lastName = "Patel";
+console.log(firstName + lastName);
+console.log(firstName + " " + lastName);
+
+let x = 5 + 10; // x = 15
+x += 15; // x = 30
+console.log(x);
