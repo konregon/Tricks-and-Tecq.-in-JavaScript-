@@ -75,7 +75,7 @@ console.log(typeof lastName);
 
 /*
 ------------Basic Operators----------
-*/
+
 
 const currentYear = 2022;
 
@@ -95,3 +95,51 @@ console.log(firstName + " " + lastName);
 let x = 5 + 10; // x = 15
 x += 15; // x = 30
 console.log(x);
+*/
+
+/*
+----------Strings and Template Literals-----------
+
+const firstName = "Maulik";
+const job = "web developer";
+const birthYear = 1996;
+const currentYear = 2022;
+
+const Maulik =
+  "I'm " +
+  firstName +
+  ", a " +
+  (currentYear - birthYear) +
+  " year old " +
+  job +
+  "!";
+console.log(Maulik);
+
+const maulikNew = `I'm ${firstName}, a ${
+  currentYear - birthYear
+} year old ${job}`;
+console.log(maulikNew);
+console.log(`just regular string!`);
+
+console.log("string with \n new line \n more line");
+
+console.log(`string
+multiple
+line`);
+*/
+
+/*
+---------Taking Decisions: if / else Statements-------
+*/
+const age = 12;
+// const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log("person can get driving license");
+} else {
+  console.log("person can not get driving license");
+  const yearsLeft = 18 - age;
+  console.log(
+    `Because person is too young, wait for another ${yearsLeft} years :)`
+  );
+}
