@@ -273,3 +273,42 @@ if (hasDrivingLic && hasGoodEyeSight && !isTired) {
   console.log("person should NOT drive");
 }
 */
+
+/*
+------- The switch Statement -------
+*/
+const day = "sunday"; // try different day of week
+
+switch (day) {
+  case "monday": // day === monday
+    console.log("plan my course structure");
+    console.log("Go to codding meet up!");
+    break;
+
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+
+  case "wednesday":
+    console.log("taking small break");
+    break;
+
+  case "thursday":
+    console.log("write some code example");
+    break;
+
+  case "friday":
+    console.log("Record videos");
+    break;
+
+  case "saturday":
+    console.log("recap the weekend");
+    break;
+
+  case "sunday":
+    console.log("Enjoy the holyday");
+    break;
+
+  default:
+    console.log("not a valid day!");
+}
