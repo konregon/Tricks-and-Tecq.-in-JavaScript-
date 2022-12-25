@@ -56,3 +56,17 @@ if (numNeighbours === 1) {
   console.log("No border");
 }
 */
+
+// Logical Operators
+
+const countryIceland = false;
+
+if (
+  countryPopulation < 50000000 &&
+  language === "English" &&
+  (countryIceland = false)
+) {
+  console.log("perfect country to live in for Sarah");
+} else {
+  console.log("Nope! Find another country");
+}
