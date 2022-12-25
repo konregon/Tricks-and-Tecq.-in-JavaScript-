@@ -143,3 +143,12 @@ if (age >= 18) {
     `Because person is too young, wait for another ${yearsLeft} years :)`
   );
 }
+
+const birthYear = 1996;
+let century;
+if (birthYear <= 2000) {
+  let century = 20;
+} else {
+  let century = 21;
+}
+console.log(century);
