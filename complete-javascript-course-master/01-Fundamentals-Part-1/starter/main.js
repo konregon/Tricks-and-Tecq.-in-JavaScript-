@@ -215,3 +215,33 @@ if (height) {
   console.log("Height is not defined.");
 }
 */
+
+/*
+------- Equality Operators: == vs. === --------
+const age = 18;
+if (age === 18) {
+  // strict equality operators (no type change)
+  console.log("person become adult just this year!");
+}
+
+console.log(18 == 18);
+console.log(18 == "18"); // lose equality operators where it will change type of variables
+console.log(18 === "18"); // always use strict equality operators, to avoid future bugs
+
+// prompt("what's your favorite number5");
+const favorite = Number(prompt("what's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 55) {
+  console.log("Cool! 55 is the number");
+} else if (favorite === 23) {
+  console.log("Cool! 23 is the number");
+} else {
+  console.log("your number is not in database5");
+}
+
+if (favorite !== 55) {
+  console.log("why not 55");
+}
+*/
