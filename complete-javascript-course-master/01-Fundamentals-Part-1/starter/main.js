@@ -130,7 +130,7 @@ line`);
 
 /*
 ---------Taking Decisions: if / else Statements-------
-*/
+
 const age = 12;
 // const isOldEnough = age >= 18;
 
@@ -152,3 +152,37 @@ if (birthYear <= 2000) {
   let century = 21;
 }
 console.log(century);
+*/
+
+/*
+----------Type Conversion and Coercion------
+
+// type conversion = manually changing type of any variable
+const inputYear = "1996";
+console.log(typeof inputYear);
+console.log(inputYear + 18); // taking both as string
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18); //converting string into Number formate
+console.log(typeof inputYear);
+
+console.log(Number("Maulik")); //NaN = Not a Number
+console.log(typeof NaN); // type of NaN is number
+
+console.log(typeof 23);
+console.log(typeof String(23)); // converting number into String
+
+//  type coercion
+console.log("I am " + 23 + " year old."); // automatically change the variable type.
+console.log("23" - "10" - 5); //JS converted the string into Number (when using "-"(minus))
+console.log("23" + "10" + 5); // when using (+), it js convert it into string
+
+// gauss the number
+let n = "1" + 1;
+console.log(n);
+console.log(typeof n); // (+) so converted to string
+n = n - 1;
+console.log(n);
+console.log(typeof n); // (-) so converted to number
+
+console.log(1 + 2 + 3 + "4" + "5" + 6 + 7 - "8" - 9); // it's changing the type of variable from left to right
+*/
