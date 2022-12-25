@@ -43,4 +43,16 @@ const description =
   "Portugal is in Europe, and its 11 million people speak portuguese";
 console.log(description);
 
-//
+// Equality Operators: == vs. ===
+/*
+let numNeighbours = Number(
+  prompt("How many neighbor countries does your country have?")
+);
+if (numNeighbours === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("more than 1 border!");
+} else {
+  console.log("No border");
+}
+*/
