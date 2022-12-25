@@ -183,6 +183,35 @@ console.log(typeof n); // (+) so converted to string
 n = n - 1;
 console.log(n);
 console.log(typeof n); // (-) so converted to number
+console.log("123" < 57);
 
 console.log(1 + 2 + 3 + "4" + "5" + 6 + 7 - "8" - 9); // it's changing the type of variable from left to right
+*/
+
+/* 
+--------- truthy and Falsy value -------
+// there are 5 falsy values : 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(undefined));
+console.log(Boolean("Maulik"));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(String(NaN)));
+
+const money = 0; // this tell if that it is 'falsy' value
+// const money = 550; // this tell if that it is 'truly' value
+if (money) {
+  console.log("don't spend it all");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 10;
+if (height) {
+  console.log("Yay! height is defined.");
+} else {
+  console.log("Height is not defined.");
+}
 */
