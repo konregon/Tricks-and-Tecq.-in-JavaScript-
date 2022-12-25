@@ -245,3 +245,31 @@ if (favorite !== 55) {
   console.log("why not 55");
 }
 */
+
+/*
+-------- Boolean Logic --------
+-------- Logical Operators --------
+const hasDrivingLic = true; // A
+const hasGoodEyeSight = true; //B
+
+console.log(hasDrivingLic && hasGoodEyeSight);
+console.log(hasDrivingLic || hasGoodEyeSight);
+console.log(!hasDrivingLic);
+
+// const shouldDrive = hasDrivingLic && hasGoodEyeSight;
+if (hasDrivingLic && hasGoodEyeSight) {
+  console.log("person can drive !");
+} else {
+  console.log("person should NOT drive");
+}
+
+const isTired = false; // C
+console.log(hasDrivingLic || hasGoodEyeSight || isTired);
+console.log(hasDrivingLic && hasGoodEyeSight && isTired);
+
+if (hasDrivingLic && hasGoodEyeSight && !isTired) {
+  console.log("person can drive !");
+} else {
+  console.log("person should NOT drive");
+}
+*/
