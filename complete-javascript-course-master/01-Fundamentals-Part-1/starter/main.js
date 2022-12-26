@@ -276,7 +276,6 @@ if (hasDrivingLic && hasGoodEyeSight && !isTired) {
 
 /*
 ------- The switch Statement -------
-*/
 const day = "sunday"; // try different day of week
 
 switch (day) {
@@ -312,3 +311,7 @@ switch (day) {
   default:
     console.log("not a valid day!");
 }
+*/
+/*
+-------- The Conditional (Ternary) Operator --------
+*/
