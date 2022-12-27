@@ -103,3 +103,10 @@ switch (worldLanguage) {
     console.log("Great language too :D");
     break;
 }
+
+// The Conditional (Ternary) Operator
+console.log(
+  `Finland's population is ${
+    finlandPopulation >= 30000000 ? "above" : "below"
+  } average`
+);
