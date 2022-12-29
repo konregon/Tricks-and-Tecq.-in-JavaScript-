@@ -13,3 +13,21 @@ console.log(usa);
 
 const canada = describeCountry("Canada", 38, "Ottawa");
 console.log(canada);
+
+//Function Declarations vs. Expressions
+//Declaration
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+const countryPopulationPercentage1 = percentageOfWorld1(1200);
+console.log(
+  `entered population is ${countryPopulationPercentage1} % of total world population.`
+);
+//Expression
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+const countryPopulationPercentage2 = percentageOfWorld2(350);
+console.log(
+  `entered population is ${countryPopulationPercentage2} % of total world population.`
+);
