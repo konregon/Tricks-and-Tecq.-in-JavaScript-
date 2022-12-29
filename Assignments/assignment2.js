@@ -31,3 +31,10 @@ const countryPopulationPercentage2 = percentageOfWorld2(350);
 console.log(
   `entered population is ${countryPopulationPercentage2} % of total world population.`
 );
+
+//Arrow Functions
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+const countryPopulationPercentage3 = percentageOfWorld3(440);
+console.log(
+  `entered population is ${countryPopulationPercentage3} % of total world population.`
+);
