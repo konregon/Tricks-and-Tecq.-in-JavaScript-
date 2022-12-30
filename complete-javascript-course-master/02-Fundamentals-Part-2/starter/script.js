@@ -28,7 +28,7 @@ console.log(appleOrangeJuice);
 */
 /*
 ------- Function Declaration vs. Expressions -----
-*/
+
 //Functions are just a VALUE
 //function declaration
 function calAge1(birthYear) {
@@ -45,10 +45,10 @@ const calAge2 = function (birthYear) {
 };
 const age2 = calAge2(1998);
 console.log(age2);
-
+*/
 /*
 ------ Arrow function ------
-*/
+
 const calAge3 = (birthYear) => 2023 - birthYear;
 const age3 = calAge3(1995);
 console.log(age3);
@@ -59,5 +59,22 @@ const yearsLeftUntilRetire = (birthYear, firstName) => {
   // return retirement;
   return `${firstName} retires in ${retirement} years`;
 };
-
 console.log(yearsLeftUntilRetire(1996, "Maulik"));
+*/
+
+/*
+---------- Function calling other function ------
+*/
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 2));
