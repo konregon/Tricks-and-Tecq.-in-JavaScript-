@@ -38,3 +38,16 @@ const countryPopulationPercentage3 = percentageOfWorld3(440);
 console.log(
   `entered population is ${countryPopulationPercentage3} % of total world population.`
 );
+
+//Function calling other function
+function percentageOfWorld4(population) {
+  return (population / 7900) * 100;
+}
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld4(population);
+  const description = `${country} has ${population} million people,
+  which is about ${percentage} % of the world.`;
+  console.log(description);
+}
+
+describePopulation("India", 1200);
