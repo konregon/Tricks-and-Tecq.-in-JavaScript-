@@ -149,7 +149,6 @@ console.log(ages);
 
 /*
 --------Basic Array Operations (Methods)------
-*/
 const friends = ["Maulik", "Manoj", "Vishal"];
 console.log(friends);
 
@@ -178,3 +177,25 @@ console.log(friends.includes("Vishal"));
 if (friends.includes("Maulik")) {
   console.log("You have a friends called Maulik");
 }
+*/
+
+/*
+-------Introduction to Objects-----
+*/
+const maulikArray = [
+  "Maulik",
+  "Indian",
+  2023 - 1996,
+  "Programer",
+  ["Vishal", "Manoj", "Hardik"],
+];
+console.log(maulikArray);
+
+const maulik = {
+  firstName: "Maulik",
+  nationality: "Indian",
+  age: 2023 - 1996,
+  job: "programmer",
+  friends: ["Kevin", "Elon", "Saradar Patel", "Swami"],
+};
+console.log(maulik);
