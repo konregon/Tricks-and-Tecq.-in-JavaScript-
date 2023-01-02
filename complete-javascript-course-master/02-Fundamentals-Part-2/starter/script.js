@@ -99,7 +99,6 @@ console.log(yearsLeftUntilRetire(1998, "Akshay"));
 
 /*
 -------Introduction to Arrays------
-*/
 const friend1 = "Maulik";
 const friend2 = "Manoj";
 const friend3 = "Vishal";
@@ -146,3 +145,36 @@ const ages = [
   calAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
+
+/*
+--------Basic Array Operations (Methods)------
+*/
+const friends = ["Maulik", "Manoj", "Vishal"];
+console.log(friends);
+
+const newFriends = friends.push("Hardik"); // push function = add new element to array
+console.log(newFriends);
+
+friends.unshift("John");
+console.log(friends);
+
+//remove element
+friends.pop(); // Last element will be deleted
+console.log(friends);
+
+friends.shift(); // first element will be deleted
+console.log(friends);
+
+//index
+console.log(friends.indexOf("Maulik"));
+console.log(friends.indexOf("Manoj"));
+console.log(friends.indexOf("Sita")); // if elements is not in array
+
+//include check if asked element is in the array or not
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Vishal"));
+
+if (friends.includes("Maulik")) {
+  console.log("You have a friends called Maulik");
+}
