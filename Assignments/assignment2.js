@@ -63,3 +63,21 @@ const percentage = [
   percentageOfWorld4(populations[3]),
 ];
 console.log(percentage);
+
+//Introduction to Objects
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: "1200 million",
+  neighbors: ["Pakistan", "Nepal", "China", "Bangladesh"],
+};
+console.log(myCountry);
+
+//Dot vs. Bracket Notation
+// "Finland has 6 million finnish-speaking people, 3 neighboring countries
+// and a capital called Helsinki"
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} speaking people,
+${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+
+myCountry.population;
