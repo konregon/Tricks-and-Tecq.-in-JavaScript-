@@ -82,7 +82,6 @@ console.log(fruitProcessor(2, 2));
 
 /*
 ---------- Reviewing Functions -----------
-*/
 const calAge = function (birthYear) {
   return 2023 - birthYear;
 };
@@ -96,3 +95,54 @@ const yearsLeftUntilRetire = function (birthYear, firstName) {
 
 yearsLeftUntilRetire(1996, "Maulik");
 console.log(yearsLeftUntilRetire(1998, "Akshay"));
+*/
+
+/*
+-------Introduction to Arrays------
+*/
+const friend1 = "Maulik";
+const friend2 = "Manoj";
+const friend3 = "Vishal";
+
+const friends = ["Maulik", "Manoj", "Vishal"];
+console.log(friends);
+
+const y = new Array(1995, 1996, 1998, 2001);
+console.log(y);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[0], y[1]);
+
+console.log(friends.length);
+console.log(y.length);
+console.log(friends[friends.length - 1]); // getting last element
+
+friends[2] = "Hardik";
+console.log(friends);
+// friends = ["Bob", "Alic"]; // can not change whole array
+
+const firstName = "Maulik";
+const Maulik = ["Maulik", "Patel", 2023 - 1996, "programer", friends];
+console.log(Maulik);
+console.log(Maulik.length);
+
+// Exercise
+const calAge = function (birthYear) {
+  return 2023 - birthYear;
+};
+const years = [1995, 1996, 1998, 2001];
+
+console.log(calAge(years));
+
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calAge(years[0]),
+  calAge(years[1]),
+  calAge(years[years.length - 1]),
+];
+console.log(ages);
