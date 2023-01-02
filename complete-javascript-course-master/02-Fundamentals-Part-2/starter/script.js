@@ -181,7 +181,6 @@ if (friends.includes("Maulik")) {
 
 /*
 -------Introduction to Objects-----
-*/
 const maulikArray = [
   "Maulik",
   "Indian",
@@ -199,3 +198,52 @@ const maulik = {
   friends: ["Kevin", "Elon", "Saradar Patel", "Swami"],
 };
 console.log(maulik);
+*/
+
+/*
+------ Dot vs. Bracket Notation -------
+*/
+const maulik = {
+  firstName: "Maulik",
+  lastName: "Patel",
+  nationality: "Indian",
+  age: 2023 - 1996,
+  job: "programmer",
+  friends: ["Kevin", "Elon", "Saradar Patel", "Swami"],
+};
+console.log(maulik);
+
+// Dot notation
+console.log(maulik.nationality);
+
+// Bracket notation
+console.log(maulik["nationality"]);
+
+const nameKey = "Name";
+console.log(maulik["first" + nameKey]);
+console.log(maulik["last" + nameKey]);
+console.log(maulik["last " + nameKey]); // with space key has become undefine
+
+const interestedIn = prompt(
+  "What do you want to know about Maulik? Choose between firstName, lastName, nationality, age, job, and friends"
+);
+// console.log(maulik[interestedIn]);
+
+if (maulik[interestedIn]) {
+  console.log(maulik[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, nationality, age, job, and friends"
+  );
+}
+
+// adding new values to our object
+maulik.location = "India";
+maulik["twitter"] = "@maulikPatel";
+console.log(maulik);
+
+// challenge
+// "Maulik has 4 friends and his best friend is called Swami"
+console.log(
+  `${maulik.firstName} has ${maulik.friends.length} friends, and his best friend is called ${maulik.friends[3]}`
+);
