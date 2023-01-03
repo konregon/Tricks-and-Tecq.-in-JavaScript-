@@ -79,5 +79,3 @@ console.log(myCountry);
 // and a capital called Helsinki"
 console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} speaking people,
 ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
-
-myCountry.population;

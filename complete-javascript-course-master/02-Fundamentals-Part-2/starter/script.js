@@ -202,7 +202,6 @@ console.log(maulik);
 
 /*
 ------ Dot vs. Bracket Notation -------
-*/
 const maulik = {
   firstName: "Maulik",
   lastName: "Patel",
@@ -247,3 +246,24 @@ console.log(maulik);
 console.log(
   `${maulik.firstName} has ${maulik.friends.length} friends, and his best friend is called ${maulik.friends[3]}`
 );
+*/
+
+/*
+-------- Function Method --------
+*/
+const maulik = {
+  firstName: "Maulik",
+  lastName: "Patel",
+  nationality: "Indian",
+  age: 2023 - 1996,
+  job: "programmer",
+  friends: ["Kevin", "Elon", "Saradar Patel", "Swami"],
+  hasDrivingLicense: true,
+  calAge: function (birthYear) {
+    return 2023 - birthYear;
+  },
+};
+console.log(maulik);
+
+console.log(maulik.calAge(1996));
+console.log(maulik["calAge"](1996));
