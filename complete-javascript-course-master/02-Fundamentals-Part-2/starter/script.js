@@ -250,7 +250,6 @@ console.log(
 
 /*
 -------- Function Method --------
-*/
 const maulik = {
   firstName: "Maulik",
   lastName: "Patel",
@@ -297,3 +296,25 @@ console.log(maulik.age);
 // challenge
 // "Maulik is 23-year old programer, and he has a/no driver's license"
 console.log(maulik.getSummary());
+*/
+
+/*
+-------- Iteration : for loop -----------
+*/
+// console.log("Lifting weight repetition 1");
+// console.log("Lifting weight repetition 2");
+// console.log("Lifting weight repetition 3");
+// console.log("Lifting weight repetition 4");
+// console.log("Lifting weight repetition 5");
+// console.log("Lifting weight repetition 6");
+// console.log("Lifting weight repetition 7");
+// console.log("Lifting weight repetition 8");
+// console.log("Lifting weight repetition 9");
+// console.log("Lifting weight repetition 10");
+// console.log("Lifting weight repetition 11");
+// console.log("Lifting weight repetition 12");
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 12; rep++) {
+  console.log(`Lifting weight repetition ${rep}`);
+}
