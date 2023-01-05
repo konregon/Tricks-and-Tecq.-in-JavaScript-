@@ -255,15 +255,45 @@ const maulik = {
   firstName: "Maulik",
   lastName: "Patel",
   nationality: "Indian",
-  age: 2023 - 1996,
+  // age: 2023 - 1996,
+  birthYear: 1996,
   job: "programmer",
   friends: ["Kevin", "Elon", "Saradar Patel", "Swami"],
   hasDrivingLicense: true,
-  calAge: function (birthYear) {
-    return 2023 - birthYear;
+
+  // calAge: function (birthYear) {
+  //   return 2023 - birthYear;
+  // },
+
+  // We are using this key word
+  // calAge: function () {
+  //   console.log(this);
+  //   return 2023 - this.birthYear;
+  // },
+
+  calAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calAge()}-year old ${
+      this.job
+    }, and he has ${this.hasDrivingLicense ? "a" : "no"} driver's license.`;
   },
 };
 console.log(maulik);
 
-console.log(maulik.calAge(1996));
-console.log(maulik["calAge"](1996));
+// console.log(maulik.calAge(1996));
+// console.log(maulik["calAge"](1996));
+
+console.log(maulik.calAge());
+console.log(maulik.calAge());
+
+console.log(maulik.age);
+console.log(maulik.age);
+console.log(maulik.age);
+
+// challenge
+// "Maulik is 23-year old programer, and he has a/no driver's license"
+console.log(maulik.getSummary());
