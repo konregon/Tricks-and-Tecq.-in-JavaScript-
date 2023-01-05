@@ -71,6 +71,15 @@ const myCountry = {
   language: "Hindi",
   population: "1200 million",
   neighbors: ["Pakistan", "Nepal", "China", "Bangladesh"],
+
+  describe: function () {
+    console.log(`${this.country} has ${this.population} ${this.language} speaking people,
+    ${this.neighbors.length} neighboring countries and a capital called ${this.capital}`);
+  },
+
+  checkIsland: function () {
+    this.isIsLand = this.neighbors.length === 0 ? true : false;
+  },
 };
 console.log(myCountry);
 
@@ -79,3 +88,10 @@ console.log(myCountry);
 // and a capital called Helsinki"
 console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} speaking people,
 ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+
+// Object Method
+// we are adding describe to object
+console.log(myCountry.describe());
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry.isIsLand);
