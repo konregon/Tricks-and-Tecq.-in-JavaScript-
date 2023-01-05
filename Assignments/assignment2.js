@@ -95,3 +95,9 @@ console.log(myCountry.describe());
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry.isIsLand);
+
+//Iteration: The for Loop
+// the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+for (rep = 1; rep <= 50; rep++) {
+  console.log(`Voter number${rep} is currently voting`);
+}
