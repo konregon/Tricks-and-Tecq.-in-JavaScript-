@@ -300,7 +300,6 @@ console.log(maulik.getSummary());
 
 /*
 -------- Iteration : for loop -----------
-*/
 // console.log("Lifting weight repetition 1");
 // console.log("Lifting weight repetition 2");
 // console.log("Lifting weight repetition 3");
@@ -318,3 +317,37 @@ console.log(maulik.getSummary());
 for (let rep = 1; rep <= 12; rep++) {
   console.log(`Lifting weight repetition ${rep}`);
 }
+*/
+
+/*
+--------- Looping Arrays, Breaking and Continuing --------
+*/
+const maulikArray = [
+  "Maulik",
+  "Indian",
+  2023 - 1996,
+  "Programer",
+  ["Vishal", "Manoj", "Hardik"],
+  true,
+];
+
+const types = [];
+
+// we have to repeat the code
+console.log(maulikArray[0]);
+console.log(maulikArray[1]);
+console.log(maulikArray[2]);
+
+// using for loop
+for (let i = 0; i < maulikArray.length; i++) {
+  console.log(maulikArray[i], typeof maulikArray[i]);
+
+  // filling types array
+  // types[i] = typeof maulikArray[i];
+  types.push(typeof maulikArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 1992, 1995, 1996, 1998];
+console.log(years);
