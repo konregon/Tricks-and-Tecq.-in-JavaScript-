@@ -351,3 +351,18 @@ console.log(types);
 
 const years = [1991, 1992, 1995, 1996, 1998];
 console.log(years);
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+for (let i = 0; i < maulikArray.length; i++) {
+  console.log(maulikArray[i], typeof maulikArray[i]);
+
+  // filling types array
+  // types[i] = typeof maulikArray[i];
+  types.push(typeof maulikArray[i]);
+}
