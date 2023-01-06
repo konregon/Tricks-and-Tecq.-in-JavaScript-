@@ -372,3 +372,32 @@ for (let i = 0; i < maulikArray.length; i++) {
   console.log(maulikArray[i], typeof maulikArray[i]);
 }
 */
+
+/*
+---------- Looping Backwards and Loops in Loops -------
+*/
+const maulikArray = [
+  "Maulik",
+  "Indian",
+  2023 - 1996,
+  "Programer",
+  ["Vishal", "Manoj", "Hardik"],
+  true,
+];
+
+// 0,1,2...4
+// 4,3,...0
+
+// backward
+for (let i = maulikArray.length - 1; i >= 0; i--) {
+  console.log(i, maulikArray[i]);
+}
+
+// loop in loop
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`===== Starting exercise ${exercise} ======`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+  }
+}
