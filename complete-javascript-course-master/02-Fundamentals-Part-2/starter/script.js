@@ -359,10 +359,16 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 // continue and break
+console.log("====== Only String =====");
 for (let i = 0; i < maulikArray.length; i++) {
-  console.log(maulikArray[i], typeof maulikArray[i]);
+  if (typeof maulikArray[i] !== "string") continue;
 
-  // filling types array
-  // types[i] = typeof maulikArray[i];
-  types.push(typeof maulikArray[i]);
+  console.log(maulikArray[i], typeof maulikArray[i]);
+}
+
+console.log("====== Break with Number =====");
+for (let i = 0; i < maulikArray.length; i++) {
+  if (typeof maulikArray[i] === "number") break;
+
+  console.log(maulikArray[i], typeof maulikArray[i]);
 }
