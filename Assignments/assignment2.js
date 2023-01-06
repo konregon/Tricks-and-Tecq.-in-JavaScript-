@@ -101,3 +101,13 @@ console.log(myCountry.isIsLand);
 for (rep = 1; rep <= 50; rep++) {
   console.log(`Voter number${rep} is currently voting`);
 }
+
+// Looping Arrays, Breaking and Continuing
+const percentage1 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  const perc = percentageOfWorld4(populations[i]);
+  percentage1.push(perc);
+}
+
+console.log(percentage1);
