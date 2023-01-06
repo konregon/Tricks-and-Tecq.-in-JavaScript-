@@ -321,7 +321,6 @@ for (let rep = 1; rep <= 12; rep++) {
 
 /*
 --------- Looping Arrays, Breaking and Continuing --------
-*/
 const maulikArray = [
   "Maulik",
   "Indian",
@@ -372,3 +371,4 @@ for (let i = 0; i < maulikArray.length; i++) {
 
   console.log(maulikArray[i], typeof maulikArray[i]);
 }
+*/
